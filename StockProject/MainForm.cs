@@ -32,6 +32,8 @@ namespace StockProject
         private const string newsURL = "https://feeds.finance.yahoo.com/rss/2.0/headline?s=";
         private const string newsURLParam = "&region=US&lang=en-US";
 
+        private static Random num = new Random(1);
+
         #endregion
 
         #region Private Fields
@@ -79,7 +81,7 @@ namespace StockProject
         private dynamic loadQuote(string symbols)
         {
             dynamic stuff = null;
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(URL+","+symbols+URLParam);
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(URL+","+symbols+ "/" + num.Next(10000000).ToString() + URLParam);
             request.Method = "GET";
             request.ContentType = "application/json";
             request.MaximumAutomaticRedirections = 4;
@@ -333,40 +335,49 @@ namespace StockProject
             try
             {
                 StockSticker indexItem = StockList.Where(x => x.Symbol.Equals("^DJI")).SingleOrDefault();
-                lblIndex1Value.Text = String.Format("{0:F2}", indexItem.Price);
-                lblChange1.Text = String.Format("{0:F2}", indexItem.Change);
-                if (indexItem.Change < 0)
+                if (indexItem != null)
                 {
-                    lblChange1.BackColor = Color.Red;
-                }
-                else if (indexItem.Change > 0)
-                {
-                    lblChange1.BackColor = Color.LightGreen;
+                    lblIndex1Value.Text = String.Format("{0:F2}", indexItem.Price);
+                    lblChange1.Text = String.Format("{0:F2}", indexItem.Change);
+                    if (indexItem.Change < 0)
+                    {
+                        lblChange1.BackColor = Color.Red;
+                    }
+                    else if (indexItem.Change > 0)
+                    {
+                        lblChange1.BackColor = Color.LightGreen;
+                    } 
                 }
 
                 indexItem = StockList.Where(x => x.Symbol.Equals("^IXIC")).SingleOrDefault();
-                lblIndex2Value.Text = String.Format("{0:F2}", indexItem.Price);
-                lblChange2.Text = String.Format("{0:F2}", indexItem.Change);
-                if (indexItem.Change < 0)
+                if (indexItem != null)
                 {
-                    lblChange2.BackColor = Color.Red;
-                }
-                else if (indexItem.Change > 0)
-                {
-                    lblChange2.BackColor = Color.LightGreen;
+                    lblIndex2Value.Text = String.Format("{0:F2}", indexItem.Price);
+                    lblChange2.Text = String.Format("{0:F2}", indexItem.Change);
+                    if (indexItem.Change < 0)
+                    {
+                        lblChange2.BackColor = Color.Red;
+                    }
+                    else if (indexItem.Change > 0)
+                    {
+                        lblChange2.BackColor = Color.LightGreen;
+                    } 
                 }
 
                 indexItem = StockList.Where(x => x.Symbol.Equals("^GSPC")).SingleOrDefault();
 
-                lblIndex3Value.Text = String.Format("{0:F2}", indexItem.Price);
-                lblChange3.Text = String.Format("{0:F2}", indexItem.Change);
-                if (indexItem.Change < 0)
+                if (indexItem != null)
                 {
-                    lblChange3.BackColor = Color.Red;
-                }
-                else if (indexItem.Change > 0)
-                {
-                    lblChange3.BackColor = Color.LightGreen;
+                    lblIndex3Value.Text = String.Format("{0:F2}", indexItem.Price);
+                    lblChange3.Text = String.Format("{0:F2}", indexItem.Change);
+                    if (indexItem.Change < 0)
+                    {
+                        lblChange3.BackColor = Color.Red;
+                    }
+                    else if (indexItem.Change > 0)
+                    {
+                        lblChange3.BackColor = Color.LightGreen;
+                    } 
                 }
             }
             catch (Exception ex)
