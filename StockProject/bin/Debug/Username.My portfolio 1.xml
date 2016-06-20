@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<stocks>
+       <stock>
+       	<symbol>YHOO</symbol>
+      	<tradedate>06/12/2016</tradedate>
+      	<shares>1000000</shares>
+      	<costbasis>16.50</costbasis>
+       </stock>
+       <stock>
+	 <symbol>TWTR</symbol>
+	 <tradedate>06/13/2016</tradedate>
+	 <shares>2000000</shares>
+	 <costbasis>17.50</costbasis>
+        </stock>
+       <stock>
+	 <symbol>FB</symbol>
+	 <tradedate>06/13/2016</tradedate>
+	 <shares>2000000</shares>
+	 <costbasis>42.00</costbasis>
+        </stock>
+       <stock>
+	 <symbol>AAPL</symbol>
+	 <tradedate>06/13/2016</tradedate>
+	 <shares>10000</shares>
+	 <costbasis>120.50</costbasis>
+        </stock>
+</stocks>

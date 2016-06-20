@@ -1,0 +1,8 @@
+c:\users\bchandrasekaran\documents\visual studio 2010\Projects\StockProject\StockProject\obj\x86\Debug\StockProject.Properties.Resources.resources
+c:\users\bchandrasekaran\documents\visual studio 2010\Projects\StockProject\StockProject\obj\x86\Debug\StockProject.csproj.GenerateResource.Cache
+c:\users\bchandrasekaran\documents\visual studio 2010\Projects\StockProject\StockProject\bin\Debug\StockProject.exe
+c:\users\bchandrasekaran\documents\visual studio 2010\Projects\StockProject\StockProject\bin\Debug\StockProject.pdb
+c:\users\bchandrasekaran\documents\visual studio 2010\Projects\StockProject\StockProject\obj\x86\Debug\StockProject.exe
+c:\users\bchandrasekaran\documents\visual studio 2010\Projects\StockProject\StockProject\obj\x86\Debug\StockProject.pdb
+c:\users\bchandrasekaran\documents\visual studio 2010\Projects\StockProject\StockProject\bin\Debug\Newtonsoft.Json.dll
+C:\Users\BChandrasekaran\Documents\Visual Studio 2010\Projects\StockProject\StockProject\obj\x86\Debug\StockProject.lblCost.resources

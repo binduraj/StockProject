@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<stocks>
+	<stock>
+	      <symbol>DODGX</symbol>
+	      <tradedate>06/14/2016</tradedate>
+	      <shares>300</shares>
+	      <costbasis>160.00</costbasis>
+	</stock>
+	<stock>
+	      <symbol>OAKBX</symbol>
+	      <tradedate>06/15/2016</tradedate>
+	      <shares>400</shares>
+	      <costbasis>28.50</costbasis>
+	</stock>
+</stocks>
+   
